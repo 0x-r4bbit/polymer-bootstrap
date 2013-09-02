@@ -1,0 +1,14 @@
+{
+  "author": "Pascal Precht",
+  "name": "polymer-bootstrap",
+  "description": "Bootstrap as polymer elements",
+  "version": "0.0.1",
+  "homepage": "http://github.com/PascalPrecht/polymer-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PascalPrecht/polymer-bootstrap"
+  },
+  "dependencies": {
+    "polymer": "~0.0.20130829"
+  }
+}
