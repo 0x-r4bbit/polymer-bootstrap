@@ -1,0 +1,42 @@
+<polymer-element name="bs-button" attributes="type size block">
+  <template>
+    <button type="button" id="bsButton" class="btn btn-{{type}}">Default</button>
+  </template>
+  <script>
+    Polymer('bs-button', {
+
+      type: 'default',
+
+      created: function () {
+        this.setupSize();
+        this.checkBlockType();
+      },
+
+      setupSize: function () {
+        var modifier;
+
+        switch (this.size) {
+          case 'large':
+            modifier = 'btn-lg';
+            break;
+
+          case 'small':
+            modifier = 'btn-sm';
+            break;
+
+          case 'extra-small':
+            modifier = 'btn-xs'
+            break;
+        }
+
+        this.$.bsButton.classList.add(modifier);
+      },
+
+      checkBlockType: function () {
+        if (this.block === 'true') {
+          this.$.bsButton.classList.add('btn-block');
+        }
+      }
+    });
+  </script>
+</polymer-element>
